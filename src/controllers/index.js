@@ -1,5 +1,4 @@
-const infoController = require('../controllers/info-controller')
-
 module.exports = {
-    infoController:infoController
+    infoController: require('./info-controller'),
+    EmailController: require('./email-controller')
 };

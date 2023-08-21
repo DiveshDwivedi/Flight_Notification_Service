@@ -1,5 +1,5 @@
 const express = require('express');
-const { infoController } = require('../../controllers');
+const { infoController, EmailController } = require('../../controllers');
 
 const router = express.Router();
 
@@ -10,5 +10,6 @@ const router = express.Router();
 // optimize above code using controller
 
 router.get('/info', infoController.info);
+router.post('/tickets', EmailController.create);
 
 module.exports = router;
